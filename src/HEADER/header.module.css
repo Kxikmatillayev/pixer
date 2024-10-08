@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+:root {
+    --oq: #ffffff;
+    --qora: #000000;
+    --yashil: #1AAB7B;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 130px;
+}
+
+
+
+header {
+    background-color: var(--oq);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 2px 0 0 gray;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+header h1 {
+    color: var(--qora);
+}
+
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: var(--qora);
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+header ul li::before {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+header ul li:hover::before {
+    width: 100%;
+}
+
+
+header button {
+    cursor: pointer;
+    background-color: var(--qora);
+    border: 2px var(--qora);
+    padding: 10px 15px;
+    color: var(--oq);
+    border: 2px solid var(--qora);
+}
+
+header button:hover {
+    background-color: transparent;
+    border: 2px solid var(--yashil);
+    color: var(--yashil);
+    transition: 300ms;
+}
+
+header button:active {
+    border: 2px solid gray;
+    background-color: gray;
+    color: var(--oq);
+}
+
+header img {
+    display: none;
+}
+
+@media (max-width: 920px) {
+
+    header a button {
+        display: none;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 740px) {
+
+    header ul,
+    header button {
+        display: none;
+    }
+
+    header img {
+        display: flex;
+    }
+
+    .container {
+        padding: 20px 70px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        padding: 20px 30px;
+    }
+
+}

@@ -1,0 +1,43 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 130px;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 85%;
+    padding: 50px 0;
+}
+
+.card div {
+    width: 400px;
+}
+
+.card img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card div {
+    width: 350px;
+}
+
+.card h1 {
+    font-size: 38px;
+    padding: 20px 0;
+}
+
+@media (max-width: 455px) {
+
+    .card img {
+        width: 300px;
+    }
+    
+}

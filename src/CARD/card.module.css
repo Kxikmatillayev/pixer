@@ -1,0 +1,59 @@
+.control {
+    width: 340px;
+    height: 300px;
+    border: 2px solid gray;
+    text-align: start;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    background-color: whitesmoke;
+    
+}
+
+.control div {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.control button {
+    color: var(--qora);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+.control p {
+    color: gray;
+    padding: 0 20px;
+}
+
+
+.control:hover {
+    background-color: var(--yashil);
+    transition: 300ms;
+}
+.control:hover span {
+    color: var(--oq);
+}
+.control:hover button {
+    color: var(--oq);
+}
+.control:hover p {
+    color: var(--oq);
+}
+
+
+@media (max-width: 400px) {
+    .control {
+        width: 250px;
+        height: 340px;
+    }
+}
